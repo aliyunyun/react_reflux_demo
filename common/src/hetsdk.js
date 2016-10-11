@@ -1,0 +1,1 @@
+require('../../../_public/js/core/hetsdk.js');
