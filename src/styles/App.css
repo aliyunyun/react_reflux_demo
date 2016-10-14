@@ -89,93 +89,6 @@ input {
 }
 
 
-body {
-  color: #000;
-  background: #fff;
-}
-
-
-.index img {
-  border-radius: 4px;
-  background: #fff;
-  display: block;
-}
-
-
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #6f6;
-  color:#f00;
-}
-
-.index .helloworld {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-}
-
-.index .navigation {
-  width: 375px;
-  height: 50px;
-  background-color: red;
-  color: #fff;
-}
-
-.index li {
-  list-style: none;
-  float: left;
-  width: 100px;
-  line-height: 50px;
-}
-
-.flex,
-.flex-column {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
-
-.flex {
-  -webkit-box-orient: horizontal;
-  /* OLD */
-  -moz-box-orient: horizontal;
-  /* OLD */
-  -ms-box-orient: horizontal;
-  /* OLD */
-  -webkit-flex-flow: row;
-  flex-flow: row;
-}
-
-.flex-column {
-  -webkit-box-orient: vertical;
-  /* OLD */
-  -moz-box-orient: vertical;
-  /* OLD */
-  -ms-box-orient: vertical;
-  /* OLD */
-  -webkit-flex-flow: column;
-  flex-flow: column;
-}
-
-.flex-cell {
-  -webkit-box-flex: 1;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  /* OLD - Firefox 19- */
-  -webkit-flex: 1;
-  /* Chrome */
-  /* IE 10 */
-  flex: 1;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-}
 
 /*公共media query查询 1rem初始设置为12px
 dpr为2时对应750的效果图 dpr为3时对应1080的效果图
@@ -307,6 +220,96 @@ EM是相对于其父元素来设置字体大小的，这样就会存在一个问
 我们只需要在根元素确定一个参考值。
 */
 
+body {
+  color: #000;
+  background: #fff;
+}
+
+
+
+.index .notice {
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #000;
+  border-width: 1px 0;
+  background: #6f6;
+  color:#f00;
+}
+
+.index .helloworld {
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.index .navigation {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.index li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  line-height: 50px;
+}
+
+.flex,
+.flex-column {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex {
+  -webkit-box-orient: horizontal;
+  /* OLD */
+  -moz-box-orient: horizontal;
+  /* OLD */
+  -ms-box-orient: horizontal;
+  /* OLD */
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  /* OLD */
+  -moz-box-orient: vertical;
+  /* OLD */
+  -ms-box-orient: vertical;
+  /* OLD */
+  -webkit-flex-flow: column;
+  flex-flow: column;
+}
+
+.flex-cell {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1;
+  /* Chrome */
+  /* IE 10 */
+  flex: 1;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-cell {
+  display: block;
+  /* OLD */
+  width: 100%;
+  /* OLD */
+}
 
 
 .modeButton {
@@ -353,10 +356,77 @@ EM是相对于其父元素来设置字体大小的，这样就会存在一个问
   margin-top: 0.2rem;
 }
 
-.btnlist-back {
-  background-color: red;
+.dev-head {
+  padding: 1.25rem 1rem;
 }
 
+/* 主控制面板 */
+
+.main-panel {
+  margin-top: 1.333rem;
+}
+
+.mode-panel {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1.388rem;
+  color: #9ba6b3;
+}
+
+.main-wrap {
+  width: 23rem;
+  border: 1px solid #d6dbe1;
+  border-width: 1px 0 1px 0;
+  background-color: #fff;
+}
+
+.vice-wrap {
+  border: 1px solid #d6dbe1;
+  border-width: 1px 0 1px 1px;
+  background-color: #fff;
+}
+
+.blue-box {
+  width: 19.667rem;
+  height: 14.944rem;
+  margin: 1.5rem;
+  background: url("../images/blue-box@3x.png") no-repeat;
+  background-size: cover;
+}
+
+.blue-box > dl {
+  text-align: center;
+  margin-top: 3.86rem;
+}
+
+.blue-box > dl > dt {
+  font-size: 1.17rem;
+}
+
+.blue-box > dl > dd {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: #3999ea;
+}
+
+
+
+.child-lock {
+  text-align: center;
+}
+
+.child-lock-ico {
+  margin-top: 6.833rem;
+}
+
+.child-lock-ico > img {
+  width: 4.611rem;
+}
+
+.child-lock-txt {
+  margin-top: 0.667rem;
+  font-size: 1.17rem;
+}
 @keyframes fade {
   0% {
     opacity: 0.3;

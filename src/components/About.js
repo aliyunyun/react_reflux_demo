@@ -64,6 +64,7 @@ export default class About extends React.Component{
     return (<div>
         <p>About me!!!!!</p>
 
+        <ModeButton className="modeButton" />
         <div className="btnlist-back">
           <section className="flex btnlist">
             <article className="flex-cell art-1" onTouchEnd={this.handleLock} >

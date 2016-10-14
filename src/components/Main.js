@@ -23,9 +23,6 @@ class AppComponent extends React.Component {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </header>
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <HelloWorld/>
-
         {this.props.children}
       </div>
 

@@ -48,6 +48,9 @@ export default Reflux.createStore(
     },
     onLock(value){
       console.log("onlock touch");
+      if(null){
+        console.log("aaa11111");
+      }
       // trigger 会触发状态，将childLock 值返回给view层
       this.trigger({childLock: value});
     }
