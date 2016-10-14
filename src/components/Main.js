@@ -4,9 +4,7 @@ require('styles/App.css');
 var myStyle = require('styles/HelloWorldCss.css');
 
 import React from 'react';
-import {HelloWorld} from './HelloWorld';
-import {About} from './About';
-import {Contact} from './Contact';
+
 import {Link} from 'react-router';
 
 
@@ -18,7 +16,7 @@ class AppComponent extends React.Component {
       <div className="index">
         <header>
           <ul className="navigation">
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/home">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
